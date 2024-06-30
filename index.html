@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather Forecast</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- link bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Weather Forecast</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              User Guide
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://www.msn.com/en-in/weather" target="_blank">MSN Weather
+                  Forcast</a></li>
+              <li><a class="dropdown-item" href="https://rb.gy/3b4bs" target="_blank">3-D Rain Map</a></li>
+              <li><a class="dropdown-item" href="https://rb.gy/6qpbc">3-D Temprature Map</a></li>
+              
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Chandigarh University</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"   href="#">Contact us</a>
+          </li>
+        </ul>
+        <div class="d-flex" role="search">
+          <input class="form-control me-2" id="city" type="search" placeholder="City name" aria-label="Search"
+            value="Chandigarh">
+          <button class="btn btn-outline-success" id="search">Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- container -->
+  <div class="container">
+    <div class="row text-center" id="result"></div>
+  </div>
+
+  <!-- Time Day -->
+<div class="container-fluid  text-center  time py-1 " id="Time"></div>
+
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="row pt-4 d-flex justify-content-around">
+          <div class="col-md-3" >
+              <!-- left footer  -->
+             <div class="left">
+                  <div>
+                      <button class="bt btn-sm"><img class="icon" src="D:\projects\weather forecast application\geo-alt.svg" alt=" "  width="32" height="32"></button><span class="text"> &nbsp; Chandigarh University</span>
+                  </div>
+                  <div>
+                      <button class="bt btn-sm mt-3"><img class="icon" src="D:\projects\weather forecast application\contacts-alt.svg" alt=" " width="32" height="32"></button><span class="text"> &nbsp; +91 9006257777 </span>
+                  </div>               
+             </div>             
+          </div>
+          
+          <div class="col-md-3 text-center Right">
+             <!-- Right footer  -->
+             <h4 class="text">Follow on</h4>
+             <div class="links d-flex justify-content-around">
+                  <button class="bt btn-sm"><a href="https://github.com/atulares019" target="_blank"><img class="icon" src="D:\projects\weather forecast application\github.svg" alt="" width="32" height="32"></a></button>
+                  <button class="bt btn-sm"><a href="https://www.linkedin.com/in/atul-kumar-788910200/" target="_blank"><img class="icon" src="D:\projects\weather forecast application\LinkedIn.png" alt="" width="32" height="32" ></a></button>
+                  <button class="bt btn-sm"><a href="https://www.instagram.com/atul_uv/" target="_blank"><img class="icon" src="D:\projects\weather forecast application\instagram.svg" alt="" width="32" height="32"></a></button>
+                  
+                  
+             </div>
+          </div>
+      </div>
+      <div class="text mt-3 bottom"><p>Developed by: Atul </p></div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
